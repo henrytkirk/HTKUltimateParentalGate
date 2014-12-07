@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>question</key>
+		<string>3 times 4</string>
+		<key>answer_number</key>
+		<integer>12</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Fifteen times Two</string>
+		<key>answer_number</key>
+		<integer>30</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Fifteen minus Two</string>
+		<key>answer_number</key>
+		<integer>13</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>20 plus 7</string>
+		<key>answer_number</key>
+		<integer>27</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>12 plus 13</string>
+		<key>answer_number</key>
+		<integer>25</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>9 divided by 3</string>
+		<key>answer_number</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>7 times 3</string>
+		<key>answer_number</key>
+		<integer>21</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>10 divided by 2</string>
+		<key>answer_number</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Six times Two</string>
+		<key>answer_number</key>
+		<integer>12</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>3 times 3</string>
+		<key>answer_number</key>
+		<integer>9</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Two plus Ten</string>
+		<key>answer_number</key>
+		<integer>12</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>5 times 5</string>
+		<key>answer_number</key>
+		<integer>25</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Ten plus Five</string>
+		<key>answer_number</key>
+		<integer>15</integer>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>5 plus 5</string>
+		<key>answer_number</key>
+		<integer>10</integer>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>96B4A544-E154-4BD7-B839-C92F89C569E7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HTKUltimateParentalGateDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E9898C8B69A01373EF06571BA9C3EEB3B81D160B</key>
+		<string>https://github.com/henrytkirk/HTKUltimateParentalGate.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HTKUltimateParentalGateDemo/HTKUltimateParentalGateDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E9898C8B69A01373EF06571BA9C3EEB3B81D160B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/henrytkirk/HTKUltimateParentalGate.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E9898C8B69A01373EF06571BA9C3EEB3B81D160B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E9898C8B69A01373EF06571BA9C3EEB3B81D160B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HTKUltimateParentalGate</string>
+		</dict>
+	</array>
+</dict>
+</plist>
