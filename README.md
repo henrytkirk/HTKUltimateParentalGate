@@ -1,7 +1,7 @@
 HTKUltimateParentalGate
 =======================
 
-The Ultimate Parental Gate to help block children from accessing in app purchases within an app. Most "Parental Gates" simply ask a math question or provide a question that a child can figure out by randomly selecting an item on the screen. This is unique in it requires both math and dexterity skills to succeed, which typically a child does not have at a young age. 
+The Ultimate Parental Gate  is designed to help block children from accessing in app purchases within an app. Most "Parental Gates" simply ask a math question or provide a question that a child can figure out by randomly selecting an item on the screen. This is unique in it requires both math and dexterity skills to succeed, which typically a child does not have at a young age. 
 
 The way it works is a view is presented to the user, which asks a simple math question in sentence form. The possible answers are displayed inside a number of balls that move around the screen at a random rate. The user has to then tap the answer and drag it to a small square in the corner of the view before time runs out. If the user selects the wrong answer too many times, it will exit the gate. If the user makes too many overall attempts in a row, it will lock the user out of the app for a few minutes (all of these values are customizable). Thus, making this the "Ultimate" Parental Gate.
 
