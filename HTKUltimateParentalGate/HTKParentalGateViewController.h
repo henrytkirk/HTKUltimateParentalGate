@@ -19,7 +19,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HTKparentalGateConstants.h"
+#import "HTKParentalGateConstants.h"
 
 /**
  * Ultimate Parental Gate that displays a title, question, 
