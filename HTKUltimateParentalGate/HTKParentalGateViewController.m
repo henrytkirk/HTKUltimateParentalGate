@@ -22,7 +22,6 @@
 #import "HTKParentalGateManager.h"
 #import "HTKParentalGateBallView.h"
 #import "HTKParentalGateQuestion.h"
-#import "HTKParentalGateConstants.h"
 
 @interface HTKParentalGateViewController () <HTKParentalGateBallViewDelegate>
 
