@@ -68,7 +68,7 @@
 		0EEC71F51A3367A200129F01 /* HTKParentalGateQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTKParentalGateQuestion.m; sourceTree = "<group>"; };
 		0EEC71F71A336E5A00129F01 /* UIColor+HTKColorUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HTKColorUtilities.h"; sourceTree = "<group>"; };
 		0EEC71F81A336E5A00129F01 /* UIColor+HTKColorUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HTKColorUtilities.m"; sourceTree = "<group>"; };
-		0EEC720C1A33D61100129F01 /* HTKParentalGateConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTKParentalGateConstants.h; sourceTree = "<group>"; };
+		0EEC720D1A34D6C800129F01 /* HTKParentalGateConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTKParentalGateConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,9 +173,9 @@
 		0EEC71E91A33648B00129F01 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				0EEC720D1A34D6C800129F01 /* HTKParentalGateConstants.h */,
 				0EEC71F71A336E5A00129F01 /* UIColor+HTKColorUtilities.h */,
 				0EEC71F81A336E5A00129F01 /* UIColor+HTKColorUtilities.m */,
-				0EEC720C1A33D61100129F01 /* HTKParentalGateConstants.h */,
 				0EEC71EA1A3365ED00129F01 /* HTKParentalGateQuestions.plist */,
 			);
 			path = resources;
