@@ -335,6 +335,9 @@
 - (void)loadQuestions {
     // Get path of our plist with questions
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"HTKParentalGateQuestions" ofType:@"plist"];
+    if (!plistPath) {
+        plistPath = [[NSBundle bundleWithIdentifier:@"HTKUltimateParentalGate"] pathForResource:@"HTKParentalGateQuestions" ofType:@"plist"];
+    }
     NSArray *questionArray = [NSArray arrayWithContentsOfFile:plistPath];
     
     [self.questionsArray removeAllObjects];
