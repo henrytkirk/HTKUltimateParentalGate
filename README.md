@@ -14,7 +14,7 @@ If anyone can help localizing this, please create and issue or pull request.
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add HTKDragAndDropCollectionViewLayout to your project.
 
-1. Add a pod entry for HTKUltimateParentalGate to your Podfile `pod 'HTKUltimateParentalGate', '~> 0.0.3'`
+1. Add a pod entry for HTKUltimateParentalGate to your Podfile `pod 'HTKUltimateParentalGate', '~> 0.0.4'`
 2. Install the pod(s) by running `pod install`.
 3. Import `HTKParentalGateViewController.h` where you will use it.
 4. Register for the `HTKParentalGateValidationStateChangedNotification` notification in the class you want to receive state changes to. You'll receive notifications such as when the user failed or passed successfully.
@@ -31,8 +31,9 @@ If anyone can help localizing this, please create and issue or pull request.
 ![Sample Screenshot](http://htk-github.s3.amazonaws.com/HTKUltimateParentalGateSS1.png)
 
 ## Change log:
-v0.0.1: Initial project commit
+v0.0.1: Initial project commit.
 v0.0.2: Forgot to include plist in original pod.
-v0.0.3: Fix to podspec
+v0.0.3: Fix to podspec.
+v0.0.4: Added full screen option and fixed bug w/ popovers.
 
 Questions? Email: henrytkirk@gmail.com or Web: http://www.henrytkirk.info

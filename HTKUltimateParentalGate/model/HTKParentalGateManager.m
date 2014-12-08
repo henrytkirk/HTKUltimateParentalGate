@@ -243,6 +243,15 @@
     self.attemptCounter++;
 }
 
+- (void)endUserAttempt {
+    // Reset some stuff
+    self.answerLastTried = nil;
+    self.incorrectAnswerCounter = 0;
+    if (self.attemptTimer) {
+        [self resetAttemptTimer];
+    }
+}
+
 - (BOOL)didUserSelectCorrectAnswerWithNumber:(NSNumber *)number {
     if ([number isEqualToNumber:self.currentQuestion.answerNumber]) {
         // Reset timer and post notification, we've got the right answer!

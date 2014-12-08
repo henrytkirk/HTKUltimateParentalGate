@@ -61,6 +61,12 @@
 - (void)beginUserAttempt;
 
 /**
+ * Ends user attempt early. Call this when dismissing the view to disable any
+ * timer.
+ */
+- (void)endUserAttempt;
+
+/**
  * Determines if the user selected the correct answer based on number supplied
  * If so, it will fire off notifications and reset. If incorrect, it will
  * increment the failed attempt counter.

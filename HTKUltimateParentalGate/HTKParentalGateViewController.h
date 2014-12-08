@@ -31,9 +31,10 @@
 
 /**
  * Shows the parental gate in the parent controller passed. Currently the
- * size is 300pt x 420pt (portrait) and is centered on the screen. (Animated)
+ * size is 300pt x 420pt (portrait) or full screen and is centered on the 
+ screen. (Animated)
  */
-- (void)showInParentViewController:(UIViewController *)parentViewController;
+- (void)showInParentViewController:(UIViewController *)parentViewController fullScreen:(BOOL)fullScreen;
 
 /**
  * Dismisses the parental gate animated.

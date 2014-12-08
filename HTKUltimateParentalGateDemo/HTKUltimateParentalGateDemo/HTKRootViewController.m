@@ -71,7 +71,7 @@
 - (void)userDidTapOnBuyNowButton:(id)sender {
     // Show our parental gate
     HTKParentalGateViewController *parentalGateController = [[HTKParentalGateViewController alloc] init];
-    [parentalGateController showInParentViewController:self];
+    [parentalGateController showInParentViewController:self fullScreen:NO];
 }
 
 #pragma mark - Notification Handlers

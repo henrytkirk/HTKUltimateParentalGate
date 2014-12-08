@@ -179,7 +179,16 @@
     [self setupBalls];
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    // End attempt, if we're in one.
+    [self.gateManager endUserAttempt];
+}
+
 - (void)dealloc {
+    // End attempt, if we're in one.
+    [self.gateManager endUserAttempt];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -258,7 +267,7 @@
 
 #pragma mark - Presentation / Dismissal 
 
-- (void)showInParentViewController:(UIViewController *)parentViewController {
+- (void)showInParentViewController:(UIViewController *)parentViewController fullScreen:(BOOL)fullScreen {
     
     self.view.alpha = 0;
 
@@ -278,9 +287,15 @@
     [parentViewController.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:parentViewController.view attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
     
     // Apply height/width constraints
-    self.widthConstraint = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:0];
-    self.heightConstraint = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:0];
-    [parentViewController.view addConstraints:@[self.widthConstraint, self.heightConstraint]];
+    if (fullScreen) {
+        NSDictionary *viewDict = @{@"thisView" : self.view};
+        [parentViewController.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[thisView]|" options:0 metrics:nil views:viewDict]];
+        [parentViewController.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[thisView]|" options:0 metrics:nil views:viewDict]];
+    } else {
+        self.widthConstraint = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:0];
+        self.heightConstraint = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:0];
+        [parentViewController.view addConstraints:@[self.widthConstraint, self.heightConstraint]];
+    }
     
     // Determine if we're in landscape or portrait
     UIInterfaceOrientation deviceOrientation = [UIApplication sharedApplication].statusBarOrientation;
@@ -305,6 +320,9 @@
 }
 
 - (void)dismissParentalGateViewController {
+    
+    // End attempt, if we're in one.
+    [self.gateManager endUserAttempt];
     
     [self willMoveToParentViewController:nil];
 
