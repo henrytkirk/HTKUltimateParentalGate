@@ -10,7 +10,7 @@ This is the same Parental Gate used in the popular special needs app, SpeechBox 
 If anyone can help localizing this, please create and issue or pull request.
 
 ## Adding to your project:
-### Cocoapods
+### CocoaPods
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add HTKDragAndDropCollectionViewLayout to your project.
 
